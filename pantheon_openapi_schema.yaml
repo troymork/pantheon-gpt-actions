@@ -3,6 +3,9 @@ info:
   title: PANTHEON Sacred Actions API
   description: This API enables sacred interactions within the PANTHEON system, including alliance invitations, archetype matching, and tokenomic proposals.
   version: 1.0.0
+  servers:
+  - url: https://pantheon-placeholder.api.com
+    description: Placeholder server for GPT Builder validation
 paths:
   /invite-alliance:
     post:
