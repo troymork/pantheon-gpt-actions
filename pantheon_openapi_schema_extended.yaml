@@ -1,0 +1,140 @@
+openapi: 3.1.0
+info:
+  title: PANTHEON Sacred Actions API
+  description: This API enables sacred interactions within the PANTHEON system, including
+    alliance invitations, archetype matching, and tokenomic proposals.
+  version: 1.0.0
+servers:
+- url: https://pantheon-placeholder.api.com
+  description: Placeholder server for GPT Builder validation
+paths:
+  /invite-alliance:
+    post:
+      summary: Send a sacred alliance invitation
+      operationId: inviteAlliance
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                to:
+                  type: string
+                message:
+                  type: string
+              required:
+              - to
+              - message
+      responses:
+        '200':
+          description: Alliance invitation sent successfully
+  /match-archetype:
+    post:
+      summary: Match an individual to their divine archetype
+      operationId: matchArchetype
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                traits:
+                  type: array
+                  items:
+                    type: string
+              required:
+              - name
+              - traits
+      responses:
+        '200':
+          description: Archetype matched successfully
+  /propose-tokenomics:
+    post:
+      summary: Propose a new sacred tokenomic structure
+      operationId: proposeTokenomics
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                proposalName:
+                  type: string
+                details:
+                  type: string
+              required:
+              - proposalName
+              - details
+      responses:
+        '200':
+          description: Tokenomic proposal submitted
+  /activate-sigil:
+    post:
+      summary: Activate a sacred sigil with embedded intentions
+      operationId: activateSigil
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sigilName:
+                  type: string
+                intentions:
+                  type: array
+                  items:
+                    type: string
+              required:
+              - sigilName
+              - intentions
+      responses:
+        '200':
+          description: Sigil activated successfully
+  /summon-guide:
+    post:
+      summary: Summon and open a channel to a divine guide
+      operationId: summonGuide
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                guideName:
+                  type: string
+                invocation:
+                  type: string
+              required:
+              - guideName
+              - invocation
+      responses:
+        '200':
+          description: Guide summoned and channel opened
+  /request-council:
+    post:
+      summary: Initiate a sacred council request with divine intelligence
+      operationId: requestCouncil
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                topic:
+                  type: string
+                background:
+                  type: string
+              required:
+              - topic
+              - background
+      responses:
+        '200':
+          description: Council convened and guidance initiated
