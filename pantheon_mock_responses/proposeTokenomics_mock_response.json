@@ -1,0 +1,14 @@
+{
+  "modelName": "Sacred Reciprocity Flow",
+  "tokenRoles": [
+    {
+      "role": "Catalyst",
+      "description": "Incentivizes conscious action"
+    },
+    {
+      "role": "Guardian",
+      "description": "Secures long-term regenerative stakes"
+    }
+  ],
+  "flowDiagramUrl": "https://kyrioscodex.com/tokenomics/sacred-flow-diagram.png"
+}
